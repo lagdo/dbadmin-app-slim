@@ -1,0 +1,51 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "type": "project",
+    "name": "lagdo/dbadmin-app-slim",
+    "description": "A web based database management tool with multiple DBMS support.",
+    "keywords": ["Database", "PostgreSQL", "MySQL", "MariaDB", "SQLite", "Slim", "PHP"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Thierry Feuzeu",
+            "email": "thierry.feuzeu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.8",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1",
+        "guzzlehttp/psr7": "^2",
+        "bryanjhv/slim-session": "^4.0",
+        "laminas/laminas-diactoros": "^3.8",
+        "jaxon-php/jaxon-slim": "^5.0",
+        "jaxon-php/jaxon-upload": "^2.1",
+        "lagdo/ui-builder-bootstrap5": "0.11.*",
+        "lagdo/dbadmin-driver-mysql": "0.23.*",
+        "lagdo/dbadmin-driver-pgsql": "0.23.*",
+        "lagdo/dbadmin-driver-sqlite": "0.23.*",
+        "lagdo/jaxon-dbadmin": "0.34.*",
+        "lagdo/facades": "^1.2",
+        "league/climate": "^3.11",
+        "monolog/monolog": "^3.10",
+        "nategood/commando": "^1.0",
+        "pharaonic/php-slugify": "^2.0",
+        "php-di/slim-bridge": "^3.4",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "scripts": {
+        "post-create-project-cmd": []
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,23 @@
+<?php $this->extends('tpl::auth/layout') ?>
+
+<?php $this->block('pageTitle') ?>
+Forbidden
+<?php $this->endblock() ?>
+
+<?php $this->block('pageContent') ?>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center mt-4">
+                    <h1 class="display-1">403</h1>
+                    <p class="lead">Forbidden</p>
+                    <p>Access to this resource is denied.</p>
+                    <a href="/">
+                        <i class="fas fa-arrow-left me-1"></i>
+                        Return to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php $this->endblock() ?>

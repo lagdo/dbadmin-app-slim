@@ -1,0 +1,6 @@
+.env
+.env.dbadmin
+/vendor/
+/storage/
+
+/docker/dbadmin-dev/
