@@ -90,44 +90,10 @@ return [
         }
         protected function url(string $filename): string
         {
-            return "/export/{$filename}";
+            return RouteParser::urlFor('export', ['filename' => $filename]);
         }
     },
     // Comment all to use the default secret config provider, which reads secret from the .env.dbadmin file.
     'secret' => [
-        // 'reader' => Provider\Secret\InfisicalConfigProvider::class,
-        // 'key' => fn() => new class implements Provider\Secret\KeyBuilderInterface {
-        //     public function build(string $prefix, string $option = ''): string
-        //     {
-        //         // $username = Auth::userId(); // Use this to customize the key.
-        //         return "users.{$prefix}.{$option}";
-        //     }
-        // },
-        // 'reader' => Provider\Secret\AwsSecretConfigProvider::class,
-        // 'key' => fn() => new class implements Provider\Secret\KeyBuilderInterface {
-        //     public function build(string $prefix, string $option = ''): string
-        //     {
-        //         // $username = Auth::userId(); // Use this to customize the key.
-        //         // User names and passwords are stored in the same entries.
-        //         return "users.{$prefix}";
-        //     }
-        // },
-        // 'reader' => Provider\Secret\GcpSecretConfigProvider::class,
-        // 'key' => fn() => new class implements Provider\Secret\KeyBuilderInterface {
-        //     public function build(string $prefix, string $option = ''): string
-        //     {
-        //         // $username = Auth::userId(); // Use this to customize the key.
-        //         return "db.users.{$prefix}.{$option}";
-        //     }
-        // },
-        // 'reader' => Provider\Secret\OpenBaoConfigProvider::class,
-        // 'key' => fn() => new class implements Provider\Secret\KeyBuilderInterface {
-        //     public function build(string $prefix, string $option = ''): string
-        //     {
-        //         // $username = Auth::userId(); // Use this to customize the key.
-        //         // The key is prefixed with "data/", for the KV2 API.
-        //         return "data/db.users.{$prefix}.{$option}";
-        //     }
-        // },
     ],
 ];

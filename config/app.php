@@ -5,7 +5,7 @@ use Monolog\Level;
 return [
     // See https://www.slimframework.com/docs/v4/middleware/error-handling.html#usage
     'errors' => [
-        'displayDetails' => true, // Should be set to false in production
+        'displayDetails' => false, // Should be set to false in production
         'log' => true,
         'logDetails' => true,
     ],
@@ -21,9 +21,5 @@ return [
         'autorefresh' => true,
         'lifetime' => '1 hour',
     ],
-    'users' => [[
-        'name' => 'Admin',
-        'email' => 'admin@company.com',
-        'password' => '$2y$12$0e7NsLeyuQuyB/.kVEgGS.3uxVHKBAfmMGurmGAKiw5xPY2NDWE7y',
-    ]],
+    'users' => [],
 ];
