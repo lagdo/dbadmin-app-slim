@@ -21,5 +21,4 @@ return [
         'autorefresh' => true,
         'lifetime' => '1 hour',
     ],
-    'users' => [],
 ];

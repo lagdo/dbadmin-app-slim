@@ -31,10 +31,10 @@ class CreateUser
         $this->command = new Command();
         // Define a flag "-s" a.k.a. "--source"
         $this->command->setHelp('Create a user account.')
-            ->option('n')
+            ->option('a')
             ->aka('name')
             ->describedAs('The new user name')
-            ->option('e')
+            ->option('m')
             ->aka('email')
             ->describedAs('The new user email');
     }
@@ -44,6 +44,12 @@ class CreateUser
      */
     public function run(): void
     {
+        $usersFile = env('USERS_JSON_FILE');
+        if (!$usersFile) {
+            $this->io->red('The USERS_JSON_FILE env var is not set.');
+            return;
+        }
+
         $name = $this->command['name'] ?? '';
         do {
             if (!$name) {
@@ -92,12 +98,17 @@ class CreateUser
         $name = addslashes($name);
         $password = password_hash($password, PASSWORD_DEFAULT);
 
-        $this->io->green("The new user data are valid.");
-        $this->io->green("Now add this entry to the 'users' array in the 'config/app.php' file.");
-        $this->io->green("[
-    'name' => '$name',
-    'email' => '$email',
-    'password' => '$password',
-]");
+        $fullPath = dirname(__DIR__, 2) . "/$usersFile";
+        $users = json_decode(file_get_contents($fullPath), true) ?? [];
+        $users = array_filter($users, fn(array $user) =>
+            ($user['email'] ?? '') !== $email);
+        $users[] = compact('name', 'email', 'password');
+        // Save the users.
+        if (!file_put_contents($fullPath, json_encode($users, JSON_PRETTY_PRINT))) {
+            $this->io->red("Unable to save the users in the $usersFile file.");
+            return;
+        }
+
+        $this->io->green("The new user is added in the $usersFile file.");
     }
 }

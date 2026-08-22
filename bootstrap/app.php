@@ -50,6 +50,7 @@ $bootAuth = require "$bootstrapDir/auth.php";
 $jaxonErrorMiddleware = require "$bootstrapDir/jaxon.php";
 
 $app->get('/login[/]', function(Request $request, Response $response): Response {
+    /** @var SessionHelper */
     $session = $this->get(SessionHelper::class);
     $response->getBody()->write('' . jaxon()->view()->render('tpl::auth/login', [
         'errors' => $session->get('errors'),
@@ -63,8 +64,6 @@ $app->get('/login[/]', function(Request $request, Response $response): Response 
 
 $router = function(Group $group, string $page) use($jaxonErrorMiddleware) {
     /**
-     * Jaxon middleware to process ajax requests
-     *
      * @throws RequestException
      */
     $ajaxMiddleware = fn(Request $request, RequestHandler $handler): Response =>

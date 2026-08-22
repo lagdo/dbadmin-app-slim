@@ -2,4 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-(new App\Command\CreateUser())->run();
+use App\Command\CreateUser;
+use Dotenv\Dotenv;
+
+Dotenv::createImmutable(dirname(__DIR__))->safeLoad();
+(new CreateUser())->run();

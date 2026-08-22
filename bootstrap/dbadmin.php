@@ -12,8 +12,7 @@ return function(App $app) {
     // Middleware to register the DbAdmin package.
     $adminConfig = function(Request $request, RequestHandler $handler): Response {
         $baseDir = dirname(__DIR__);
-        $configDir = "$baseDir/config/dbadmin";
-        DbAdminPackage::register($configDir, '/jaxon');
+        DbAdminPackage::register("$baseDir/config/dbadmin", '/jaxon');
 
         // Call the Jaxon Psr7 config middleware.
         return jaxon()->psr()
@@ -24,8 +23,7 @@ return function(App $app) {
     // Middleware to register the DbAudit package.
     $auditConfig = function(Request $request, RequestHandler $handler): Response {
         $baseDir = dirname(__DIR__);
-        $configDir = "$baseDir/config/dbadmin";
-        DbAuditPackage::register($configDir, '/audit/jaxon');
+        DbAuditPackage::register("$baseDir/config/dbadmin", '/audit/jaxon');
 
         // Call the Jaxon Psr7 config middleware.
         return jaxon()->psr()
@@ -48,7 +46,7 @@ return function(App $app) {
         }
 
         $response = $app->getResponseFactory()->createResponse();
-        $response->getBody()->write('' . $jaxon->view()->render('tpl::auth/403'));
+        $response->getBody()->write((string)$jaxon->view()->render('tpl::auth/403'));
         return $response->withStatus(403);
     };
 
