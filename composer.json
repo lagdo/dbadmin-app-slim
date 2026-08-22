@@ -19,6 +19,10 @@
         "nyholm/psr7-server": "^1.1",
         "guzzlehttp/psr7": "^2",
         "bryanjhv/slim-session": "^4.0",
+        "aws/aws-sdk-php": "^3.379",
+        "csharpru/vault-php": "^4.4",
+        "infisical/php-sdk": "^0.0.2",
+        "google/cloud-secret-manager": "^2.3",
         "laminas/laminas-diactoros": "^3.8",
         "jaxon-php/jaxon-slim": "^5.0",
         "jaxon-php/jaxon-upload": "^2.1",
@@ -41,11 +45,6 @@
         },
         "files": [
             "app/helpers.php"
-        ]
-    },
-    "scripts": {
-        "post-create-project-cmd": [
-            "@php -r \"echo 'Nothing to do.';\""
         ]
     },
     "minimum-stability": "dev",
