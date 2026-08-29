@@ -10,12 +10,6 @@ return [
                 'dir' => "$baseDir/storage/dbadmin/attributes",
             ],
         ],
-        'template' => [
-            'name' => 'bootstrap5',
-            'assets' => [
-                'url' => '/dbadmin',
-            ],
-        ],
         'views' => [
             'tpl' => [
                 'directory' => "$baseDir/templates",
