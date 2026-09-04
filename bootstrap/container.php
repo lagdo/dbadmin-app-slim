@@ -5,6 +5,7 @@ use Jaxon\Config\Config;
 use Jaxon\Config\ConfigSetter;
 use Lagdo\DbAdmin\Driver\Utils\TranslatorInterface;
 use Lagdo\DbAdmin\Support\Provider\AuthInterface;
+use Lagdo\DbAdmin\Support\Service\Export\FileSystemInterface;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Psr\Container\ContainerInterface;
@@ -43,6 +44,7 @@ $builder->addDefinitions([
         $c->get(App::class)->getRouteCollector()->getRouteParser(),
     AuthInterface::class => fn() => jaxon()->di()->g(AuthInterface::class),
     TranslatorInterface::class => fn() => jaxon()->di()->g(TranslatorInterface::class),
+    FileSystemInterface::class => fn() => jaxon()->di()->g(FileSystemInterface::class),
 ]);
 
 $builder->useAutowiring(false);
