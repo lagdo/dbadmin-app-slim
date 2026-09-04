@@ -4,6 +4,7 @@ use DI\Container;
 use Dotenv\Dotenv;
 use Jaxon\Config\Config;
 use Jaxon\Exception\RequestException;
+use Lagdo\DbAdmin\Support\Facade\FileSystem;
 use Lagdo\Facades\ContainerWrapper;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -92,6 +93,16 @@ $app->group('', fn(Group $group) => $router($group, 'dbadmin'))
 $app->group('/audit', fn(Group $group) => $router($group, 'dbaudit'))
     ->add($auditGateMiddleware)
     ->add($auditConfigMiddleware)
+    ->add($authCheckMiddleware)
+    ->add($authStartMiddleware);
+
+$app->get('/export/{filename}', function(Request $request, Response $response, array $args) {
+    $fs = FileSystem::instance();
+    $response->getBody()->write($fs?->read($args['filename']) ?? 'No export reader set.');
+    return $response->withStatus(!!$fs ? 200 : 403)
+        ->withHeader('Content-Type', 'text/plain');
+})->setName('dbadmin_file')
+    ->add($adminConfigMiddleware)
     ->add($authCheckMiddleware)
     ->add($authStartMiddleware);
 
