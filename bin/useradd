@@ -1,0 +1,4 @@
+#/bin/sh
+
+COMMAND_DIR=$(dirname $(dirname "$0"))
+php ${COMMAND_DIR}/cli/create-user.php "$@"
