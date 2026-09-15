@@ -11,6 +11,12 @@
             "email": "thierry.feuzeu@gmail.com"
         }
     ],
+    "repositories": {
+        "itk-dev/azure-key-vault-php": {
+            "type": "vcs",
+            "url": "https://github.com/feuzeu/AzureKeyVaultPhp"
+        }
+    },
     "require": {
         "php": "^8.2",
         "slim/slim": "4.*",
@@ -19,18 +25,20 @@
         "nyholm/psr7-server": "^1.1",
         "guzzlehttp/psr7": "^2",
         "bryanjhv/slim-session": "^4.0",
+        "alibabacloud/kms-20160120": "^2.0",
         "aws/aws-sdk-php": "^3.379",
         "csharpru/vault-php": "^4.4",
         "infisical/php-sdk": "^0.0.2",
+        "itk-dev/azure-key-vault-php": "dev-main",
         "google/cloud-secret-manager": "^2.3",
         "laminas/laminas-diactoros": "^3.8",
         "jaxon-php/jaxon-slim": "^5.0",
         "jaxon-php/jaxon-upload": "^2.1",
-        "lagdo/ui-builder-bootstrap5": "0.11.*",
+        "lagdo/ui-builder-bootstrap5": "0.12.*",
         "lagdo/dbadmin-driver-mysql": "0.23.*",
         "lagdo/dbadmin-driver-pgsql": "0.23.*",
         "lagdo/dbadmin-driver-sqlite": "0.23.*",
-        "lagdo/jaxon-dbadmin": "0.34.*",
+        "lagdo/jaxon-dbadmin": "0.35.*",
         "lagdo/facades": "^1.2",
         "league/climate": "^3.11",
         "monolog/monolog": "^3.10",
