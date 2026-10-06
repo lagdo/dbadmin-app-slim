@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "824b3c75718c78b6144a8200ee3ba92f",
+    "content-hash": "85daee1068c7f328922b369fa5cf2e94",
     "packages": [
         {
             "name": "adbario/php-dot-notation",
@@ -822,16 +822,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.397.0",
+            "version": "3.399.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8d2c3adc6ab2d7c6160a9034867cd4bd2b535619"
+                "reference": "cd7cf43b7d42e49579bf3f09ab58d4724d64152c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8d2c3adc6ab2d7c6160a9034867cd4bd2b535619",
-                "reference": "8d2c3adc6ab2d7c6160a9034867cd4bd2b535619",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cd7cf43b7d42e49579bf3f09ab58d4724d64152c",
+                "reference": "cd7cf43b7d42e49579bf3f09ab58d4724d64152c",
                 "shasum": ""
             },
             "require": {
@@ -913,9 +913,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.397.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.399.1"
             },
-            "time": "2026-09-23T18:07:37+00:00"
+            "time": "2026-10-02T18:16:16+00:00"
         },
         {
             "name": "brick/math",
@@ -1156,16 +1156,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v7.2.0",
+            "version": "v7.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/php-jwt.git",
-                "reference": "f502cdbf279cd7532060b041f7c22a05208c0b93"
+                "reference": "0501f5729b9e2448516674aff07c7d1727869b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/php-jwt/zipball/f502cdbf279cd7532060b041f7c22a05208c0b93",
-                "reference": "f502cdbf279cd7532060b041f7c22a05208c0b93",
+                "url": "https://api.github.com/repos/googleapis/php-jwt/zipball/0501f5729b9e2448516674aff07c7d1727869b8e",
+                "reference": "0501f5729b9e2448516674aff07c7d1727869b8e",
                 "shasum": ""
             },
             "require": {
@@ -1224,22 +1224,22 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/php-jwt/issues",
-                "source": "https://github.com/googleapis/php-jwt/tree/v7.2.0"
+                "source": "https://github.com/googleapis/php-jwt/tree/v7.2.1"
             },
-            "time": "2026-09-21T19:29:58+00:00"
+            "time": "2026-09-28T17:51:46+00:00"
         },
         {
             "name": "google/auth",
-            "version": "v1.55.0",
+            "version": "v1.55.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "cccb71f824ed63d5d7e139a838850e78de855386"
+                "reference": "ef1b92cb42470b09b3caaf23bb9b4bb9a2dc787e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/cccb71f824ed63d5d7e139a838850e78de855386",
-                "reference": "cccb71f824ed63d5d7e139a838850e78de855386",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/ef1b92cb42470b09b3caaf23bb9b4bb9a2dc787e",
+                "reference": "ef1b92cb42470b09b3caaf23bb9b4bb9a2dc787e",
                 "shasum": ""
             },
             "require": {
@@ -1295,22 +1295,22 @@
             "support": {
                 "docs": "https://cloud.google.com/php/docs/reference/auth/latest",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.55.0"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.55.1"
             },
-            "time": "2026-09-21T19:29:58+00:00"
+            "time": "2026-09-28T17:51:46+00:00"
         },
         {
             "name": "google/cloud-secret-manager",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-secret-manager.git",
-                "reference": "b8ab452acd44667d2a2b122bc07ce1fc84f691ac"
+                "reference": "317ccd36f3f17f2167e0703b4865f836fc8c4214"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-secret-manager/zipball/b8ab452acd44667d2a2b122bc07ce1fc84f691ac",
-                "reference": "b8ab452acd44667d2a2b122bc07ce1fc84f691ac",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-secret-manager/zipball/317ccd36f3f17f2167e0703b4865f836fc8c4214",
+                "reference": "317ccd36f3f17f2167e0703b4865f836fc8c4214",
                 "shasum": ""
             },
             "require": {
@@ -1346,9 +1346,9 @@
             ],
             "description": "Secret Manager Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-secret-manager/tree/v2.5.3"
+                "source": "https://github.com/googleapis/google-cloud-php-secret-manager/tree/v2.5.4"
             },
-            "time": "2026-09-14T18:27:51+00:00"
+            "time": "2026-09-28T17:51:46+00:00"
         },
         {
             "name": "google/common-protos",
@@ -1411,16 +1411,16 @@
         },
         {
             "name": "google/gax",
-            "version": "v1.50.0",
+            "version": "v1.51.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/gax-php.git",
-                "reference": "8828323023d618c11ec84ab7f1ae8298b6ebb6b3"
+                "reference": "4cad310c5b520be80fd89f76b54261f28f10ab54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/8828323023d618c11ec84ab7f1ae8298b6ebb6b3",
-                "reference": "8828323023d618c11ec84ab7f1ae8298b6ebb6b3",
+                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/4cad310c5b520be80fd89f76b54261f28f10ab54",
+                "reference": "4cad310c5b520be80fd89f76b54261f28f10ab54",
                 "shasum": ""
             },
             "require": {
@@ -1470,9 +1470,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/gax-php/issues",
-                "source": "https://github.com/googleapis/gax-php/tree/v1.50.0"
+                "source": "https://github.com/googleapis/gax-php/tree/v1.51.0"
             },
-            "time": "2026-09-21T19:29:58+00:00"
+            "time": "2026-09-28T17:51:46+00:00"
         },
         {
             "name": "google/grpc-gcp",
@@ -1521,16 +1521,16 @@
         },
         {
             "name": "google/longrunning",
-            "version": "0.8.4",
+            "version": "0.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/php-longrunning.git",
-                "reference": "a60c8e2407eab5b2e4c8f36c40cd9c0eeb47d327"
+                "reference": "ca83fbce2e20556f9abdb939efce14f642336acd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/a60c8e2407eab5b2e4c8f36c40cd9c0eeb47d327",
-                "reference": "a60c8e2407eab5b2e4c8f36c40cd9c0eeb47d327",
+                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/ca83fbce2e20556f9abdb939efce14f642336acd",
+                "reference": "ca83fbce2e20556f9abdb939efce14f642336acd",
                 "shasum": ""
             },
             "require-dev": {
@@ -1559,9 +1559,9 @@
             ],
             "description": "Google LongRunning Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/php-longrunning/tree/v0.8.4"
+                "source": "https://github.com/googleapis/php-longrunning/tree/v0.8.5"
             },
-            "time": "2026-09-14T18:27:51+00:00"
+            "time": "2026-09-28T17:51:46+00:00"
         },
         {
             "name": "google/protobuf",
@@ -2280,16 +2280,16 @@
         },
         {
             "name": "jaxon-php/jaxon-core",
-            "version": "v5.8.3",
+            "version": "v5.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaxon-php/jaxon-core.git",
-                "reference": "511b310f88686109551069ce2533d8740c22ade4"
+                "reference": "36a2fdc5cb1f62958151f98ab8764281d62a3f84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaxon-php/jaxon-core/zipball/511b310f88686109551069ce2533d8740c22ade4",
-                "reference": "511b310f88686109551069ce2533d8740c22ade4",
+                "url": "https://api.github.com/repos/jaxon-php/jaxon-core/zipball/36a2fdc5cb1f62958151f98ab8764281d62a3f84",
+                "reference": "36a2fdc5cb1f62958151f98ab8764281d62a3f84",
                 "shasum": ""
             },
             "require": {
@@ -2360,7 +2360,7 @@
                 "issues": "https://github.com/jaxon-php/jaxon-core/issues",
                 "source": "https://github.com/jaxon-php/jaxon-core"
             },
-            "time": "2026-08-23T23:57:17+00:00"
+            "time": "2026-10-06T10:18:53+00:00"
         },
         {
             "name": "jaxon-php/jaxon-dialogs",
@@ -2989,16 +2989,16 @@
         },
         {
             "name": "lagdo/html-builder",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/html-builder.git",
-                "reference": "9575e986f0027cd7bee70f921e79844dea9194d8"
+                "reference": "d9050a357f3f3ba38c3d966cf2beb9e6622b8bce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/html-builder/zipball/9575e986f0027cd7bee70f921e79844dea9194d8",
-                "reference": "9575e986f0027cd7bee70f921e79844dea9194d8",
+                "url": "https://api.github.com/repos/lagdo/html-builder/zipball/d9050a357f3f3ba38c3d966cf2beb9e6622b8bce",
+                "reference": "d9050a357f3f3ba38c3d966cf2beb9e6622b8bce",
                 "shasum": ""
             },
             "require": {
@@ -3036,20 +3036,20 @@
                 "issues": "https://github.com/lagdo/html-builder/issues",
                 "source": "https://github.com/lagdo/html-builder"
             },
-            "time": "2026-09-23T11:25:50+00:00"
+            "time": "2026-10-05T07:25:43+00:00"
         },
         {
             "name": "lagdo/jaxon-dbadmin",
-            "version": "v0.35.1",
+            "version": "v0.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/jaxon-dbadmin.git",
-                "reference": "9fd15afb0eda09fb62ddee51d85080775e409764"
+                "reference": "d900b3fb11b25c6ea7457f0335864bee5f037a47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/jaxon-dbadmin/zipball/9fd15afb0eda09fb62ddee51d85080775e409764",
-                "reference": "9fd15afb0eda09fb62ddee51d85080775e409764",
+                "url": "https://api.github.com/repos/lagdo/jaxon-dbadmin/zipball/d900b3fb11b25c6ea7457f0335864bee5f037a47",
+                "reference": "d900b3fb11b25c6ea7457f0335864bee5f037a47",
                 "shasum": ""
             },
             "require": {
@@ -3062,8 +3062,8 @@
                 "jaxon-php/jaxon-upload": "^2.1",
                 "lagdo/dbadmin-driver": "0.23.*",
                 "lagdo/facades": "^1.2",
-                "lagdo/jaxon-ui-builder": "0.14.*",
-                "lagdo/ui-builder": "0.14.*",
+                "lagdo/jaxon-ui-builder": "0.15.*",
+                "lagdo/ui-builder": "0.15.*",
                 "php": ">=8.1.0"
             },
             "require-dev": {
@@ -3111,26 +3111,26 @@
                 "issues": "https://github.com/lagdo/jaxon-dbadmin/issues",
                 "source": "https://github.com/lagdo/jaxon-dbadmin"
             },
-            "time": "2026-09-24T01:05:02+00:00"
+            "time": "2026-10-05T16:50:44+00:00"
         },
         {
             "name": "lagdo/jaxon-ui-builder",
-            "version": "v0.14.0",
+            "version": "v0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/jaxon-ui-builder.git",
-                "reference": "fb360b3a683fda8888518563eb8b8f43f0f1d8f0"
+                "reference": "e33ab997b6ab5e3d226fc9eda1ba1a84d597bce6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/jaxon-ui-builder/zipball/fb360b3a683fda8888518563eb8b8f43f0f1d8f0",
-                "reference": "fb360b3a683fda8888518563eb8b8f43f0f1d8f0",
+                "url": "https://api.github.com/repos/lagdo/jaxon-ui-builder/zipball/e33ab997b6ab5e3d226fc9eda1ba1a84d597bce6",
+                "reference": "e33ab997b6ab5e3d226fc9eda1ba1a84d597bce6",
                 "shasum": ""
             },
             "require": {
                 "jaxon-php/jaxon-core": "^5.4",
-                "lagdo/ui-builder": "0.14.*",
-                "php": ">=8.0"
+                "lagdo/ui-builder": "0.15.*",
+                "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
@@ -3163,25 +3163,30 @@
                 "issues": "https://github.com/lagdo/jaxon-ui-builder/issues",
                 "source": "https://github.com/lagdo/jaxon-ui-builder"
             },
-            "time": "2026-09-21T17:49:05+00:00"
+            "time": "2026-10-05T08:53:35+00:00"
         },
         {
             "name": "lagdo/ui-builder",
-            "version": "v0.14.2",
+            "version": "v0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/ui-builder.git",
-                "reference": "05593c466a284deb02caa176f908e3b895851175"
+                "reference": "1e89cbd4148434bca16455f2efd90cc8b91ba20c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/ui-builder/zipball/05593c466a284deb02caa176f908e3b895851175",
-                "reference": "05593c466a284deb02caa176f908e3b895851175",
+                "url": "https://api.github.com/repos/lagdo/ui-builder/zipball/1e89cbd4148434bca16455f2efd90cc8b91ba20c",
+                "reference": "1e89cbd4148434bca16455f2efd90cc8b91ba20c",
                 "shasum": ""
             },
             "require": {
-                "lagdo/html-builder": "1.5.*",
-                "php": ">=8.0"
+                "lagdo/html-builder": "1.6.*",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpcov": "^8.2",
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
@@ -3210,25 +3215,30 @@
                 "issues": "https://github.com/lagdo/ui-builder/issues",
                 "source": "https://github.com/lagdo/ui-builder"
             },
-            "time": "2026-09-23T11:44:21+00:00"
+            "time": "2026-10-05T08:53:35+00:00"
         },
         {
             "name": "lagdo/ui-builder-bootstrap5",
-            "version": "v0.13.0",
+            "version": "v0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/ui-builder-bootstrap5.git",
-                "reference": "1de494e0a27ce29886ca4f0dee83c9fee65d4519"
+                "reference": "08152463e17733cccb8d2b0564074dc1e7bf7d8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/ui-builder-bootstrap5/zipball/1de494e0a27ce29886ca4f0dee83c9fee65d4519",
-                "reference": "1de494e0a27ce29886ca4f0dee83c9fee65d4519",
+                "url": "https://api.github.com/repos/lagdo/ui-builder-bootstrap5/zipball/08152463e17733cccb8d2b0564074dc1e7bf7d8f",
+                "reference": "08152463e17733cccb8d2b0564074dc1e7bf7d8f",
                 "shasum": ""
             },
             "require": {
-                "lagdo/ui-builder": "0.14.*",
-                "php": ">=8.0"
+                "lagdo/ui-builder": "0.15.*",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpcov": "^8.2",
+                "phpunit/phpunit": "^9.5"
             },
             "type": "library",
             "autoload": {
@@ -3257,7 +3267,7 @@
                 "issues": "https://github.com/lagdo/ui-builder-bootstrap5/issues",
                 "source": "https://github.com/lagdo/ui-builder-bootstrap5"
             },
-            "time": "2026-09-21T17:49:05+00:00"
+            "time": "2026-10-05T08:53:35+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
@@ -3841,16 +3851,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "3.12.0",
+            "version": "3.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "72c534fc0ab181ef52d92a68382318631e301608"
+                "reference": "d7059e4c691d05ea1222b5124bed0f961be46e15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/72c534fc0ab181ef52d92a68382318631e301608",
-                "reference": "72c534fc0ab181ef52d92a68382318631e301608",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d7059e4c691d05ea1222b5124bed0f961be46e15",
+                "reference": "d7059e4c691d05ea1222b5124bed0f961be46e15",
                 "shasum": ""
             },
             "require": {
@@ -3930,7 +3940,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/3.12.0"
+                "source": "https://github.com/Seldaek/monolog/tree/3.12.1"
             },
             "funding": [
                 {
@@ -3942,7 +3952,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-09T08:34:20+00:00"
+            "time": "2026-09-29T19:21:12+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -5709,16 +5719,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.38.2",
+            "version": "v1.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "d3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6"
+                "reference": "4d5d331bf731e0aedbc6b2f5e61135b7b7996a72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6",
-                "reference": "d3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/4d5d331bf731e0aedbc6b2f5e61135b7b7996a72",
+                "reference": "4d5d331bf731e0aedbc6b2f5e61135b7b7996a72",
                 "shasum": ""
             },
             "require": {
@@ -5770,7 +5780,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.38.2"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.43.0"
             },
             "funding": [
                 {
@@ -5790,20 +5800,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-27T06:59:30+00:00"
+            "time": "2026-09-24T15:19:04+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.37.0",
+            "version": "v1.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "dfb55726c3a76ea3b6459fcfda1ec2d80a682411"
+                "reference": "9c6a5d6b01ca51d486c813e9a9c0ed55f208bb74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dfb55726c3a76ea3b6459fcfda1ec2d80a682411",
-                "reference": "dfb55726c3a76ea3b6459fcfda1ec2d80a682411",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/9c6a5d6b01ca51d486c813e9a9c0ed55f208bb74",
+                "reference": "9c6a5d6b01ca51d486c813e9a9c0ed55f208bb74",
                 "shasum": ""
             },
             "require": {
@@ -5854,7 +5864,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.37.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.43.0"
             },
             "funding": [
                 {
@@ -5874,7 +5884,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-10T16:19:22+00:00"
+            "time": "2026-09-25T15:50:05+00:00"
         },
         {
             "name": "tedivm/jshrink",
