@@ -53,7 +53,7 @@ $jaxonErrorMiddleware = require "$bootstrapDir/jaxon.php";
 $app->get('/login[/]', function(Request $request, Response $response): Response {
     /** @var SessionHelper */
     $session = $this->get(SessionHelper::class);
-    $response->getBody()->write('' . jaxon()->view()->render('tpl::auth/login', [
+    $response->getBody()->write('' . jaxon()->view()->render('dbadmin::auth/login', [
         'errors' => $session->get('errors'),
     ]));
     // The errors are flashed.
@@ -72,7 +72,7 @@ $router = function(Group $group, string $page) use($jaxonErrorMiddleware) {
 
     // Show the page
     $group->get('[/]', function(Request $request, Response $response) use($page): Response {
-        $response->getBody()->write('' . jaxon()->view()->render("tpl::$page"));
+        $response->getBody()->write('' . jaxon()->view()->render("dbadmin::$page"));
         return $response;
     })->setName("{$page}_page");
 

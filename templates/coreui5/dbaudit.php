@@ -1,29 +1,31 @@
-<?php $this->extends('tpl::layout') ?>
+<?php $this->extends('dbadmin::layout') ?>
 
 <?php
 use Lagdo\DbAdmin\App\DbAuditPackage;
+
 use function Jaxon\attr;
-use function Jaxon\jaxon;
+
+$jaxon = Jaxon\jaxon();
 ?>
 
 <?php $this->block('htmlHeader') ?>
-<?= jaxon()->getCss(), "\n" ?>
+<?php
+echo $jaxon->getCss(), "\n";
+?>
 <?php $this->endblock() ?>
 
 <?php $this->block('htmlFooter') ?>
-<?= jaxon()->getJs(), "\n", jaxon()->getScript(), "\n" ?>
 <?php
+echo $jaxon->getJs(), "\n", $jaxon->getScript(), "\n";
 $readyScript = attr()->package(DbAuditPackage::class, 'ready');
 ?>
-<?php if($readyScript !== ''): ?>
 <script type='text/javascript'>
   <?= $readyScript ?>;
 </script>
-<?php endif ?>
 <?php $this->endblock() ?>
 
 <?php $this->block('pageContent') ?>
         <div class="container-fluid px-3">
-          <?php echo jaxon()->package(DbAuditPackage::class)->layout() ?>
+          <?php echo $jaxon->package(DbAuditPackage::class)->layout() ?>
         </div>
 <?php $this->endblock() ?>

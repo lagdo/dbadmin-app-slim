@@ -1,4 +1,4 @@
-<?php $this->extends('tpl::layout') ?>
+<?php $this->extends('dbadmin::layout') ?>
 
 <?php
 use Lagdo\DbAdmin\App\DbAdminPackage;

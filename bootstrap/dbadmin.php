@@ -14,8 +14,12 @@ return function(App $app) {
         $baseDir = dirname(__DIR__);
         DbAdminPackage::register("$baseDir/config/dbadmin", '/jaxon');
 
+        $jaxon = jaxon();
+        $template = $jaxon->getAppOption('template', '');
+        $jaxon->view()->addNamespace('dbadmin', "$baseDir/templates/$template", '.php', 'jaxon');
+
         // Call the Jaxon Psr7 config middleware.
-        return jaxon()->psr()
+        return $jaxon->psr()
             ->config("$baseDir/config/jaxon.php")
             ->process($request, $handler);
     };
@@ -25,8 +29,12 @@ return function(App $app) {
         $baseDir = dirname(__DIR__);
         DbAuditPackage::register("$baseDir/config/dbadmin", '/audit/jaxon');
 
+        $jaxon = jaxon();
+        $template = $jaxon->getAppOption('template', '');
+        $jaxon->view()->addNamespace('dbadmin', "$baseDir/templates/$template", '.php', 'jaxon');
+
         // Call the Jaxon Psr7 config middleware.
-        return jaxon()->psr()
+        return $jaxon->psr()
             ->config("$baseDir/config/jaxon.php")
             ->process($request, $handler);
     };
@@ -46,7 +54,7 @@ return function(App $app) {
         }
 
         $response = $app->getResponseFactory()->createResponse();
-        $response->getBody()->write((string)$jaxon->view()->render('tpl::auth/403'));
+        $response->getBody()->write((string)$jaxon->view()->render('dbadmin::auth/403'));
         return $response->withStatus(403);
     };
 

@@ -10,13 +10,13 @@ return [
                 'dir' => "$baseDir/storage/dbadmin/attributes",
             ],
         ],
-        'views' => [
-            'tpl' => [
-                'directory' => "$baseDir/templates",
-                'extension' => '.php',
-                'renderer' => 'jaxon',
-            ],
-        ],
+        // 'views' => [
+        //     'dbadmin' => [
+        //         'directory' => "$baseDir/templates",
+        //         'extension' => '.php',
+        //         'renderer' => 'jaxon',
+        //     ],
+        // ],
         'assets' => [
             'export' => true,
             'minify' => true,

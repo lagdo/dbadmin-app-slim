@@ -1,4 +1,4 @@
-<?php $this->extends('tpl::auth/layout') ?>
+<?php $this->extends('dbadmin::auth/layout') ?>
 
 <?php $this->block('pageTitle') ?>
 Forbidden
