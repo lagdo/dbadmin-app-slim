@@ -19,16 +19,10 @@
       <main>
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-5 mt-5" style="color: rgba(255, 255, 255, 0.6);">
-              <h3 class="text-center font-weight-light my-4">Jaxon DbAdmin</h3>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
             <div class="col-lg-5">
               <div class="card shadow-lg border-0 rounded-lg mt-5">
                 <div class="card-header">
-                  <h5 class="text-center font-weight-light my-4"><?= $this->pageTitle ?></h5>
+                  <h5 class="text-center font-weight-light my-4"><?= $this->headTitle ?></h5>
                 </div>
 
                 <div class="card-body">
@@ -47,11 +41,9 @@
         <div class="container-fluid px-4">
             <div class="d-flex align-items-center justify-content-between">
               <div class="text-muted">
-                Built on <a style="text-decoration: none;" href="https://github.com/lagdo/dbadmin-mono" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a> with the &middot;
-                <a style="text-decoration: none;" href="https://www.jaxon-php.org" target="_blank">Jaxon Ajax library</a>
-                &middot;
+
+<?= $this->builtWith ?>
+
               </div>
             </div>
         </div>

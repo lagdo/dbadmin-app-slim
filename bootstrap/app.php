@@ -1,10 +1,11 @@
 <?php
 
+use App\Response\ResponseStream;
 use DI\Container;
 use Dotenv\Dotenv;
 use Jaxon\Config\Config;
 use Jaxon\Exception\RequestException;
-use Lagdo\DbAdmin\Support\Facade\FileSystem;
+use Lagdo\DbAdmin\Support\Facade\Export;
 use Lagdo\Facades\ContainerWrapper;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -35,6 +36,7 @@ $container->set(App::class, $app);
 // Register the DbAdmin package.
 $bootDbAdmin = require "$bootstrapDir/dbadmin.php";
 [
+    $loginConfigMiddleware,
     $adminConfigMiddleware,
     $auditConfigMiddleware,
     $auditGateMiddleware,
@@ -53,14 +55,16 @@ $jaxonErrorMiddleware = require "$bootstrapDir/jaxon.php";
 $app->get('/login[/]', function(Request $request, Response $response): Response {
     /** @var SessionHelper */
     $session = $this->get(SessionHelper::class);
-    $response->getBody()->write('' . jaxon()->view()->render('dbadmin::auth/login', [
+    $jaxon = jaxon();
+    $response->getBody()->write('' . $jaxon->view()->render('dbadmin::auth/login', [
         'errors' => $session->get('errors'),
+        'builtWith' => $jaxon->di()->g('built_with'),
     ]));
     // The errors are flashed.
     $session->set('errors', []);
     return $response;
 })->setName('page_login')
-    ->add($adminConfigMiddleware)
+    ->add($loginConfigMiddleware)
     ->add($authStartMiddleware);
 
 $router = function(Group $group, string $page) use($jaxonErrorMiddleware) {
@@ -97,10 +101,22 @@ $app->group('/audit', fn(Group $group) => $router($group, 'dbaudit'))
     ->add($authStartMiddleware);
 
 $app->get('/export/{filename}', function(Request $request, Response $response, array $args) {
-    $fs = FileSystem::instance();
-    $response->getBody()->write($fs?->read($args['filename']) ?? 'No export reader set.');
-    return $response->withStatus(!!$fs ? 200 : 403)
-        ->withHeader('Content-Type', 'text/plain');
+    $filename = $args['filename'];
+    $options = Export::options($filename);
+    $exports = Export::export($options);
+    if ($exports === null) {
+        $response->getBody()->write("Unable to export file $filename.");
+        return $response->withStatus(403)
+            ->withHeader('Content-Type', 'text/plain');
+    }
+
+    $stream = new ResponseStream($exports);
+    return $response->withBody($stream)
+        ->withHeader('Content-Type', $options->contentType())
+        ->withHeader('Content-Disposition', $options->contentDisposition())
+        ->withHeader('Cache-Control', 'no-cache')
+        ->withHeader('Connection', 'keep-alive')
+        ->withHeader('X-Accel-Buffering', 'no');
 })->setName('dbadmin_file')
     ->add($adminConfigMiddleware)
     ->add($authCheckMiddleware)

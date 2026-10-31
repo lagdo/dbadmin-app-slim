@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Jaxon DbAdmin &mdash; <?= $this->pageTitle ?></title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/bulma/checkbox.min.css">
+    <style>
+      html {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="padding-top: 5px;">
+      <div id="app">
+        <section class="hero is-fullheight is-primary is-bold">
+          <div class="hero-body">
+            <div class="container">
+              <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-3">
+                  <div class="box">
+                    <h1 class="is-size-3 has-text-weight-semibold is-family-sans-serif"><?= $this->headTitle ?></h1>
+                    <hr>
+
+<?= $this->pageContent ?>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="has-background-white">
+            <footer class="m-3 py-3">
+              <div class="text-muted">
+
+<?= $this->builtWith ?>
+
+              </div>
+            </footer>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  </body>
+</html>

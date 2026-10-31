@@ -5,7 +5,7 @@ use Monolog\Level;
 return [
     // See https://www.slimframework.com/docs/v4/middleware/error-handling.html#usage
     'errors' => [
-        'displayDetails' => false, // Should be set to false in production
+        'displayDetails' => true, // Should be set to false in production
         'log' => true,
         'logDetails' => true,
     ],

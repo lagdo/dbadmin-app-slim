@@ -4,6 +4,10 @@
 <?= __('Login') ?>
 <?php $this->endblock() ?>
 
+<?php $this->block('headTitle') ?>
+Jaxon DbAdmin
+<?php $this->endblock() ?>
+
 <?php $this->block('pageContent') ?>
                   <form method="POST" action="/login" class="needs-validation" novalidate="">
                     <div class="form-floating mb-3">
@@ -25,7 +29,7 @@
 
                     <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                       <span>&nbsp;</span>
-                      <button type="submit" class="btn btn-primary" tabindex="4"><?= __('Login') ?></button>
+                      <button type="submit" class="btn btn-primary"><?= __('Login') ?></button>
                     </div>
                   </form>
 <?php $this->endblock() ?>

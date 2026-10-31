@@ -4,768 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85daee1068c7f328922b369fa5cf2e94",
+    "content-hash": "52c2376209aa35790188b145bc765ef5",
     "packages": [
-        {
-            "name": "adbario/php-dot-notation",
-            "version": "2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/adbario/php-dot-notation.git",
-                "reference": "081e2cca50c84bfeeea2e3ef9b2c8d206d80ccae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/adbario/php-dot-notation/zipball/081e2cca50c84bfeeea2e3ef9b2c8d206d80ccae",
-                "reference": "081e2cca50c84bfeeea2e3ef9b2c8d206d80ccae",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^5.5 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.7|^6.6|^7.5|^8.5|^9.5",
-                "squizlabs/php_codesniffer": "^3.6"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Adbar\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Riku Särkinen",
-                    "email": "riku@adbar.io"
-                }
-            ],
-            "description": "PHP dot notation access to arrays",
-            "homepage": "https://github.com/adbario/php-dot-notation",
-            "keywords": [
-                "ArrayAccess",
-                "dotnotation"
-            ],
-            "support": {
-                "issues": "https://github.com/adbario/php-dot-notation/issues",
-                "source": "https://github.com/adbario/php-dot-notation/tree/2.5.0"
-            },
-            "time": "2022-10-14T20:31:46+00:00"
-        },
-        {
-            "name": "alibabacloud/credentials",
-            "version": "1.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aliyun/credentials-php.git",
-                "reference": "47f180664b1f603e4141d4d7df3777041c031dfa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aliyun/credentials-php/zipball/47f180664b1f603e4141d4d7df3777041c031dfa",
-                "reference": "47f180664b1f603e4141d4d7df3777041c031dfa",
-                "shasum": ""
-            },
-            "require": {
-                "adbario/php-dot-notation": "^2.2",
-                "alibabacloud/tea": "^3.0",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "ext-simplexml": "*",
-                "ext-xmlwriter": "*",
-                "guzzlehttp/guzzle": "^6.3|^7.0",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "composer/composer": "^1.8",
-                "drupal/coder": "^8.3",
-                "ext-dom": "*",
-                "ext-pcre": "*",
-                "ext-sockets": "*",
-                "ext-spl": "*",
-                "mikey179/vfsstream": "^1.6",
-                "monolog/monolog": "^1.24",
-                "phpunit/phpunit": "^5.7|^6.5|^8.5|^9.3",
-                "psr/cache": "^1.0",
-                "symfony/dotenv": "^3.4",
-                "symfony/var-dumper": "^3.4"
-            },
-            "suggest": {
-                "ext-sockets": "To use client-side monitoring"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Credentials\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com",
-                    "homepage": "http://www.alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud Credentials for PHP",
-            "homepage": "https://www.alibabacloud.com/",
-            "keywords": [
-                "alibaba",
-                "alibabacloud",
-                "aliyun",
-                "client",
-                "cloud",
-                "credentials",
-                "library",
-                "sdk",
-                "tool"
-            ],
-            "support": {
-                "issues": "https://github.com/aliyun/credentials-php/issues",
-                "source": "https://github.com/aliyun/credentials-php"
-            },
-            "time": "2026-08-18T04:38:10+00:00"
-        },
-        {
-            "name": "alibabacloud/darabonba",
-            "version": "v1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/darabonba.git",
-                "reference": "b1ccea693258ea68e455e330922406f3afe10e9c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/darabonba/zipball/b1ccea693258ea68e455e330922406f3afe10e9c",
-                "reference": "b1ccea693258ea68e455e330922406f3afe10e9c",
-                "shasum": ""
-            },
-            "require": {
-                "adbario/php-dot-notation": "^2.4",
-                "alibabacloud/tea": "^3.2",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "ext-simplexml": "*",
-                "ext-xmlwriter": "*",
-                "guzzlehttp/guzzle": "^6.3|^7.0",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.4.3|^9.3",
-                "symfony/dotenv": "^3.4",
-                "symfony/var-dumper": "^3.4"
-            },
-            "suggest": {
-                "ext-sockets": "To use client-side monitoring"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Dara\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com",
-                    "homepage": "http://www.alibabacloud.com"
-                }
-            ],
-            "description": "Client of Darabonba for PHP",
-            "homepage": "https://www.alibabacloud.com/",
-            "keywords": [
-                "alibabacloud",
-                "client",
-                "cloud",
-                "tea"
-            ],
-            "support": {
-                "issues": "https://github.com/aliyun/tea-php/issues",
-                "source": "https://github.com/aliyun/tea-php"
-            },
-            "time": "2025-12-15T10:15:24+00:00"
-        },
-        {
-            "name": "alibabacloud/darabonba-array",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/darabonba-array.git",
-                "reference": "b0d9ccd24f003f0f9ab4e965f4130ef86eb74f9e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/darabonba-array/zipball/b0d9ccd24f003f0f9ab4e965f4130ef86eb74f9e",
-                "reference": "b0d9ccd24f003f0f9ab4e965f4130ef86eb74f9e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Darabonba\\ArrayUtil\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Alibaba Cloud Tea Array Util Library for PHP",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/darabonba-array/tree/0.1.0"
-            },
-            "time": "2022-10-31T10:02:39+00:00"
-        },
-        {
-            "name": "alibabacloud/darabonba-encode-util",
-            "version": "0.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/darabonba-encode-util.git",
-                "reference": "50b2cd0eb4aac8f8fbcae9d15218e177dffcda30"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/darabonba-encode-util/zipball/50b2cd0eb4aac8f8fbcae9d15218e177dffcda30",
-                "reference": "50b2cd0eb4aac8f8fbcae9d15218e177dffcda30",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/tea-utils": "^0.2",
-                "lizhichao/one-sm": "^1.5",
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Darabonba\\EncodeUtil\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Alibaba Cloud Tea Encode Util Library for PHP",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/darabonba-encode-util/tree/0.0.2"
-            },
-            "time": "2022-12-10T04:38:35+00:00"
-        },
-        {
-            "name": "alibabacloud/darabonba-map",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/darabonba-map.git",
-                "reference": "98318d77341735769ed106d5cd5a24613336de7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/darabonba-map/zipball/98318d77341735769ed106d5cd5a24613336de7e",
-                "reference": "98318d77341735769ed106d5cd5a24613336de7e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.4.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Darabonba\\MapUtil\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Alibaba Cloud Tea Map Util Library for PHP",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/darabonba-map/tree/0.0.1"
-            },
-            "time": "2021-12-07T02:48:54+00:00"
-        },
-        {
-            "name": "alibabacloud/darabonba-signature-util",
-            "version": "0.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/darabonba-signature-util.git",
-                "reference": "1cc0ef26e8c723f139f0dd2913b9a951eb4fa4b9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/darabonba-signature-util/zipball/1cc0ef26e8c723f139f0dd2913b9a951eb4fa4b9",
-                "reference": "1cc0ef26e8c723f139f0dd2913b9a951eb4fa4b9",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/tea-utils": "^0.2",
-                "lizhichao/one-sm": "^1.5",
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Darabonba\\SignatureUtil\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Alibaba Cloud Tea signature Util Library for PHP",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/darabonba-signature-util/tree/0.0.4"
-            },
-            "time": "2022-12-10T04:38:35+00:00"
-        },
-        {
-            "name": "alibabacloud/darabonba-string",
-            "version": "0.1.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/darabonba-string.git",
-                "reference": "48266c48f2eb03feeeeaa2c8642970ae308f6ea4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/darabonba-string/zipball/48266c48f2eb03feeeeaa2c8642970ae308f6ea4",
-                "reference": "48266c48f2eb03feeeeaa2c8642970ae308f6ea4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Darabonba\\String\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Alibaba Cloud Tea Console Output Library for PHP",
-            "support": {
-                "issues": "https://github.com/alibabacloud-sdk-php/darabonba-string/issues",
-                "source": "https://github.com/alibabacloud-sdk-php/darabonba-string/tree/0.1.16"
-            },
-            "time": "2025-05-29T08:55:05+00:00"
-        },
-        {
-            "name": "alibabacloud/endpoint-util",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/endpoint-util.git",
-                "reference": "f3fe88a25d8df4faa3b0ae14ff202a9cc094e6c5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/endpoint-util/zipball/f3fe88a25d8df4faa3b0ae14ff202a9cc094e6c5",
-                "reference": "f3fe88a25d8df4faa3b0ae14ff202a9cc094e6c5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.4.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Endpoint\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud Endpoint Library for PHP",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/endpoint-util/tree/0.1.1"
-            },
-            "time": "2020-06-04T10:57:15+00:00"
-        },
-        {
-            "name": "alibabacloud/gateway-pop",
-            "version": "0.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/alibabacloud-gateway-pop.git",
-                "reference": "292bc40d6ab9c48f626f422b2582f86da6e2e32a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/alibabacloud-gateway-pop/zipball/292bc40d6ab9c48f626f422b2582f86da6e2e32a",
-                "reference": "292bc40d6ab9c48f626f422b2582f86da6e2e32a",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/credentials": "^1.2.2",
-                "alibabacloud/darabonba-array": "^0.1.0",
-                "alibabacloud/darabonba-encode-util": "^0.0.2",
-                "alibabacloud/darabonba-map": "^0.0.1",
-                "alibabacloud/darabonba-signature-util": "^0.0.4",
-                "alibabacloud/darabonba-string": "^0.1.15",
-                "alibabacloud/endpoint-util": "^0.1.0",
-                "alibabacloud/gateway-spi": "^1",
-                "alibabacloud/openapi-util": "^0.1.10|^0.2.1",
-                "alibabacloud/tea-utils": "^0.2.21",
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Darabonba\\GatewayPop\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud POP Client",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/alibabacloud-gateway-pop/tree/0.0.8"
-            },
-            "time": "2025-03-17T04:10:37+00:00"
-        },
-        {
-            "name": "alibabacloud/gateway-spi",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/alibabacloud-gateway-spi.git",
-                "reference": "7440f77750c329d8ab252db1d1d967314ccd1fcb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/alibabacloud-gateway-spi/zipball/7440f77750c329d8ab252db1d1d967314ccd1fcb",
-                "reference": "7440f77750c329d8ab252db1d1d967314ccd1fcb",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/credentials": "^1.1",
-                "php": ">5.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Darabonba\\GatewaySpi\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud Gateway SPI Client",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/alibabacloud-gateway-spi/tree/1.0.0"
-            },
-            "time": "2022-07-14T05:31:35+00:00"
-        },
-        {
-            "name": "alibabacloud/kms-20160120",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/Kms-20160120.git",
-                "reference": "29d99a724df5e9f6ab7cdf8dcc9835bcfe8187f5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/Kms-20160120/zipball/29d99a724df5e9f6ab7cdf8dcc9835bcfe8187f5",
-                "reference": "29d99a724df5e9f6ab7cdf8dcc9835bcfe8187f5",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/darabonba": "^1.0.0",
-                "alibabacloud/gateway-pop": "^0.0.8",
-                "alibabacloud/openapi-core": "^1.0.0",
-                "php": ">5.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\SDK\\Kms\\V20160120\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud KeyManagementService (20160120) SDK Library for PHP",
-            "support": {
-                "source": "https://github.com/alibabacloud-sdk-php/Kms-20160120/tree/2.0.0"
-            },
-            "time": "2026-07-02T03:31:32+00:00"
-        },
-        {
-            "name": "alibabacloud/openapi-core",
-            "version": "1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/openapi-core.git",
-                "reference": "7b241b2a0e71f70629e2ecdc5cbe8c8b6b3a7567"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/openapi-core/zipball/7b241b2a0e71f70629e2ecdc5cbe8c8b6b3a7567",
-                "reference": "7b241b2a0e71f70629e2ecdc5cbe8c8b6b3a7567",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/credentials": "^1.2.2",
-                "alibabacloud/darabonba": "^1",
-                "alibabacloud/gateway-spi": "^1",
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35|^5.4.3|^9.3",
-                "symfony/dotenv": "^3.4",
-                "symfony/var-dumper": "^3.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Darabonba\\OpenApi\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud OpenApi Client Core",
-            "support": {
-                "issues": "https://github.com/alibabacloud-sdk-php/openapi-core/issues",
-                "source": "https://github.com/alibabacloud-sdk-php/openapi-core/tree/1.0.9"
-            },
-            "time": "2026-01-15T06:47:29+00:00"
-        },
-        {
-            "name": "alibabacloud/openapi-util",
-            "version": "0.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/openapi-util.git",
-                "reference": "02b1dda623b3d4614720da76b81640e9f308c52d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/openapi-util/zipball/02b1dda623b3d4614720da76b81640e9f308c52d",
-                "reference": "02b1dda623b3d4614720da76b81640e9f308c52d",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/tea": "^3.1",
-                "alibabacloud/tea-utils": "^0.2",
-                "lizhichao/one-sm": "^1.5",
-                "php": ">5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\OpenApiUtil\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud OpenApi Util",
-            "support": {
-                "issues": "https://github.com/alibabacloud-sdk-php/openapi-util/issues",
-                "source": "https://github.com/alibabacloud-sdk-php/openapi-util/tree/0.2.2"
-            },
-            "time": "2026-01-14T07:41:26+00:00"
-        },
-        {
-            "name": "alibabacloud/tea",
-            "version": "3.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aliyun/tea-php.git",
-                "reference": "1619cb96c158384f72b873e1f85de8b299c9c367"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aliyun/tea-php/zipball/1619cb96c158384f72b873e1f85de8b299c9c367",
-                "reference": "1619cb96c158384f72b873e1f85de8b299c9c367",
-                "shasum": ""
-            },
-            "require": {
-                "adbario/php-dot-notation": "^2.4",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-openssl": "*",
-                "ext-simplexml": "*",
-                "ext-xmlwriter": "*",
-                "guzzlehttp/guzzle": "^6.3|^7.0",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*",
-                "symfony/dotenv": "^3.4",
-                "symfony/var-dumper": "^3.4"
-            },
-            "suggest": {
-                "ext-sockets": "To use client-side monitoring"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Tea\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com",
-                    "homepage": "http://www.alibabacloud.com"
-                }
-            ],
-            "description": "Client of Tea for PHP",
-            "homepage": "https://www.alibabacloud.com/",
-            "keywords": [
-                "alibabacloud",
-                "client",
-                "cloud",
-                "tea"
-            ],
-            "support": {
-                "issues": "https://github.com/aliyun/tea-php/issues",
-                "source": "https://github.com/aliyun/tea-php"
-            },
-            "time": "2023-05-16T06:43:41+00:00"
-        },
-        {
-            "name": "alibabacloud/tea-utils",
-            "version": "0.2.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alibabacloud-sdk-php/tea-utils.git",
-                "reference": "d885eadc9d185661ff9bd1d037333f62ba5daa99"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alibabacloud-sdk-php/tea-utils/zipball/d885eadc9d185661ff9bd1d037333f62ba5daa99",
-                "reference": "d885eadc9d185661ff9bd1d037333f62ba5daa99",
-                "shasum": ""
-            },
-            "require": {
-                "alibabacloud/tea": "^3.1",
-                "php": ">5.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AlibabaCloud\\Tea\\Utils\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alibaba Cloud SDK",
-                    "email": "sdk-team@alibabacloud.com"
-                }
-            ],
-            "description": "Alibaba Cloud Tea Utils for PHP",
-            "support": {
-                "issues": "https://github.com/aliyun/tea-util/issues",
-                "source": "https://github.com/aliyun/tea-util"
-            },
-            "time": "2025-11-19T04:38:07+00:00"
-        },
         {
             "name": "aws/aws-crt-php",
             "version": "v1.2.7",
@@ -822,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.399.1",
+            "version": "3.402.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "cd7cf43b7d42e49579bf3f09ab58d4724d64152c"
+                "reference": "ffff4dbeda1c386f66e7e819afbd55406aa9799b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cd7cf43b7d42e49579bf3f09ab58d4724d64152c",
-                "reference": "cd7cf43b7d42e49579bf3f09ab58d4724d64152c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ffff4dbeda1c386f66e7e819afbd55406aa9799b",
+                "reference": "ffff4dbeda1c386f66e7e819afbd55406aa9799b",
                 "shasum": ""
             },
             "require": {
@@ -843,7 +83,7 @@
                 "guzzlehttp/promises": "^2.0.3 || ^3.0",
                 "guzzlehttp/psr7": "^2.6.3 || ^3.0",
                 "mtdowling/jmespath.php": "^2.9.1",
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "psr/http-message": "^1.0 || ^2.0",
                 "symfony/filesystem": "^v5.4.45 || ^v6.4.3 || ^v7.1.0 || ^v8.0.0"
             },
@@ -913,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.399.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.402.5"
             },
-            "time": "2026-10-02T18:16:16+00:00"
+            "time": "2026-10-30T18:04:02+00:00"
         },
         {
             "name": "brick/math",
@@ -1230,16 +470,16 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.55.1",
+            "version": "v1.55.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "ef1b92cb42470b09b3caaf23bb9b4bb9a2dc787e"
+                "reference": "81d6d2bd311ba5fb579e52f6c8aa2d660379de75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/ef1b92cb42470b09b3caaf23bb9b4bb9a2dc787e",
-                "reference": "ef1b92cb42470b09b3caaf23bb9b4bb9a2dc787e",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/81d6d2bd311ba5fb579e52f6c8aa2d660379de75",
+                "reference": "81d6d2bd311ba5fb579e52f6c8aa2d660379de75",
                 "shasum": ""
             },
             "require": {
@@ -1261,8 +501,7 @@
                 "sebastian/comparator": ">=1.2.3",
                 "squizlabs/php_codesniffer": "^4.0",
                 "symfony/filesystem": "^6.4.39||^7.3",
-                "symfony/process": "^6.4.41||^7.0",
-                "webmozart/assert": "^1.11||^2.0"
+                "symfony/process": "^6.4.41||^7.0"
             },
             "suggest": {
                 "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings or for token management. Please require version ^2."
@@ -1295,22 +534,22 @@
             "support": {
                 "docs": "https://cloud.google.com/php/docs/reference/auth/latest",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.55.1"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.55.3"
             },
-            "time": "2026-09-28T17:51:46+00:00"
+            "time": "2026-10-28T23:00:54+00:00"
         },
         {
             "name": "google/cloud-secret-manager",
-            "version": "v2.5.4",
+            "version": "v2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-secret-manager.git",
-                "reference": "317ccd36f3f17f2167e0703b4865f836fc8c4214"
+                "reference": "cc74d8b3479e6de7dea995dca77061e6d69c3f2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-secret-manager/zipball/317ccd36f3f17f2167e0703b4865f836fc8c4214",
-                "reference": "317ccd36f3f17f2167e0703b4865f836fc8c4214",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-secret-manager/zipball/cc74d8b3479e6de7dea995dca77061e6d69c3f2c",
+                "reference": "cc74d8b3479e6de7dea995dca77061e6d69c3f2c",
                 "shasum": ""
             },
             "require": {
@@ -1346,22 +585,22 @@
             ],
             "description": "Secret Manager Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-secret-manager/tree/v2.5.4"
+                "source": "https://github.com/googleapis/google-cloud-php-secret-manager/tree/v2.6.0"
             },
-            "time": "2026-09-28T17:51:46+00:00"
+            "time": "2026-10-28T01:51:30+00:00"
         },
         {
             "name": "google/common-protos",
-            "version": "4.14.3",
+            "version": "4.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/common-protos-php.git",
-                "reference": "3c219d28f513a8997ac5d098f43943e3c5b4509a"
+                "reference": "74893ae29540a7166dab074cee8b57e78c534702"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/common-protos-php/zipball/3c219d28f513a8997ac5d098f43943e3c5b4509a",
-                "reference": "3c219d28f513a8997ac5d098f43943e3c5b4509a",
+                "url": "https://api.github.com/repos/googleapis/common-protos-php/zipball/74893ae29540a7166dab074cee8b57e78c534702",
+                "reference": "74893ae29540a7166dab074cee8b57e78c534702",
                 "shasum": ""
             },
             "require": {
@@ -1405,31 +644,31 @@
                 "google"
             ],
             "support": {
-                "source": "https://github.com/googleapis/common-protos-php/tree/v4.14.3"
+                "source": "https://github.com/googleapis/common-protos-php/tree/v4.15.0"
             },
-            "time": "2026-09-14T18:27:51+00:00"
+            "time": "2026-10-28T01:51:30+00:00"
         },
         {
             "name": "google/gax",
-            "version": "v1.51.0",
+            "version": "v1.51.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/gax-php.git",
-                "reference": "4cad310c5b520be80fd89f76b54261f28f10ab54"
+                "reference": "1c06ae8e829e4e56bf22d4ce32768bf2523ddf7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/4cad310c5b520be80fd89f76b54261f28f10ab54",
-                "reference": "4cad310c5b520be80fd89f76b54261f28f10ab54",
+                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/1c06ae8e829e4e56bf22d4ce32768bf2523ddf7d",
+                "reference": "1c06ae8e829e4e56bf22d4ce32768bf2523ddf7d",
                 "shasum": ""
             },
             "require": {
                 "google/auth": "^1.53",
                 "google/common-protos": "^4.9",
-                "google/grpc-gcp": "^0.4",
+                "google/grpc-gcp": "^0.5",
                 "google/longrunning": "~0.4",
                 "google/protobuf": "^4.31||^5.34",
-                "grpc/grpc": "^1.38",
+                "grpc/grpc": "^1.84.1",
                 "guzzlehttp/promises": "^2.0.3||^3.0",
                 "guzzlehttp/psr7": "^2.6.3||^3.0",
                 "php": "^8.2",
@@ -1439,11 +678,9 @@
                 "ext-protobuf": "<4.31.0"
             },
             "require-dev": {
-                "google/cloud-tools": "^0.16.1",
                 "phpspec/prophecy-phpunit": "^2.1",
                 "phpstan/phpstan": "^2.0",
-                "phpunit/phpunit": "^9.6",
-                "webmozart/assert": "^1.11.0"
+                "phpunit/phpunit": "^9.6"
             },
             "type": "library",
             "extra": {
@@ -1470,29 +707,29 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/gax-php/issues",
-                "source": "https://github.com/googleapis/gax-php/tree/v1.51.0"
+                "source": "https://github.com/googleapis/gax-php/tree/v1.51.2"
             },
-            "time": "2026-09-28T17:51:46+00:00"
+            "time": "2026-10-28T23:00:54+00:00"
         },
         {
             "name": "google/grpc-gcp",
-            "version": "0.4.2",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GoogleCloudPlatform/grpc-gcp-php.git",
-                "reference": "1049c0c15b6a1789fdeb52af688a94d540932469"
+                "reference": "cecdf5ebe76a7b4e6e133a0c081f7be8ab274cd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GoogleCloudPlatform/grpc-gcp-php/zipball/1049c0c15b6a1789fdeb52af688a94d540932469",
-                "reference": "1049c0c15b6a1789fdeb52af688a94d540932469",
+                "url": "https://api.github.com/repos/GoogleCloudPlatform/grpc-gcp-php/zipball/cecdf5ebe76a7b4e6e133a0c081f7be8ab274cd7",
+                "reference": "cecdf5ebe76a7b4e6e133a0c081f7be8ab274cd7",
                 "shasum": ""
             },
             "require": {
                 "google/auth": "^1.3",
                 "google/protobuf": "^v3.25.3||^4.26.1||^5.0",
-                "grpc/grpc": "^v1.13.0",
-                "php": "^8.0",
+                "grpc/grpc": "^1.84.1",
+                "php": "^8.2",
                 "psr/cache": "^1.0.1||^2.0.0||^3.0.0"
             },
             "require-dev": {
@@ -1515,22 +752,22 @@
             "description": "gRPC GCP library for channel management",
             "support": {
                 "issues": "https://github.com/GoogleCloudPlatform/grpc-gcp-php/issues",
-                "source": "https://github.com/GoogleCloudPlatform/grpc-gcp-php/tree/v0.4.2"
+                "source": "https://github.com/GoogleCloudPlatform/grpc-gcp-php/tree/v0.5.0"
             },
-            "time": "2026-03-12T22:56:09+00:00"
+            "time": "2026-10-28T20:22:51+00:00"
         },
         {
             "name": "google/longrunning",
-            "version": "0.8.5",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/php-longrunning.git",
-                "reference": "ca83fbce2e20556f9abdb939efce14f642336acd"
+                "reference": "ccecf40953cefbddb569fd67b27bd0cf8a1381da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/ca83fbce2e20556f9abdb939efce14f642336acd",
-                "reference": "ca83fbce2e20556f9abdb939efce14f642336acd",
+                "url": "https://api.github.com/repos/googleapis/php-longrunning/zipball/ccecf40953cefbddb569fd67b27bd0cf8a1381da",
+                "reference": "ccecf40953cefbddb569fd67b27bd0cf8a1381da",
                 "shasum": ""
             },
             "require-dev": {
@@ -1559,9 +796,9 @@
             ],
             "description": "Google LongRunning Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/php-longrunning/tree/v0.8.5"
+                "source": "https://github.com/googleapis/php-longrunning/tree/v0.9.0"
             },
-            "time": "2026-09-28T17:51:46+00:00"
+            "time": "2026-10-28T01:51:30+00:00"
         },
         {
             "name": "google/protobuf",
@@ -1671,20 +908,20 @@
         },
         {
             "name": "grpc/grpc",
-            "version": "1.82.0",
+            "version": "1.85.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/grpc/grpc-php.git",
-                "reference": "be984cb608f21e96453b3cfe54c748cc7b192250"
+                "reference": "08bd482ca6f99d45fa85ad0bd70876e7455e39cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grpc/grpc-php/zipball/be984cb608f21e96453b3cfe54c748cc7b192250",
-                "reference": "be984cb608f21e96453b3cfe54c748cc7b192250",
+                "url": "https://api.github.com/repos/grpc/grpc-php/zipball/08bd482ca6f99d45fa85ad0bd70876e7455e39cf",
+                "reference": "08bd482ca6f99d45fa85ad0bd70876e7455e39cf",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1.0"
+                "php": ">=8.2.0"
             },
             "require-dev": {
                 "google/auth": "^v1.3.0"
@@ -1709,28 +946,28 @@
                 "rpc"
             ],
             "support": {
-                "source": "https://github.com/grpc/grpc-php/tree/v1.82.0"
+                "source": "https://github.com/grpc/grpc-php/tree/v1.85.0"
             },
-            "time": "2026-07-03T09:39:53+00:00"
+            "time": "2026-10-28T05:30:17+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.15.5",
+            "version": "7.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee80339fd9177ba44c49cdb653ff02a4d1106b9a"
+                "reference": "81755d989b3007ca7f88a069857553cd08e7dc2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee80339fd9177ba44c49cdb653ff02a4d1106b9a",
-                "reference": "ee80339fd9177ba44c49cdb653ff02a4d1106b9a",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/81755d989b3007ca7f88a069857553cd08e7dc2e",
+                "reference": "81755d989b3007ca7f88a069857553cd08e7dc2e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^2.5.3",
-                "guzzlehttp/psr7": "^2.13.1",
+                "guzzlehttp/promises": "^2.6",
+                "guzzlehttp/psr7": "^2.13.2",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
@@ -1823,7 +1060,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.15.5"
+                "source": "https://github.com/guzzle/guzzle/tree/7.16.1"
             },
             "funding": [
                 {
@@ -1839,20 +1076,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-24T09:21:06+00:00"
+            "time": "2026-10-25T21:35:21+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.5.3",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "cde49999552d185d64715fe9c1f77a2aadd2f9f1"
+                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/cde49999552d185d64715fe9c1f77a2aadd2f9f1",
-                "reference": "cde49999552d185d64715fe9c1f77a2aadd2f9f1",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/3d88c829bd5f13d13847b39067dbf09a60af2154",
+                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154",
                 "shasum": ""
             },
             "require": {
@@ -1907,7 +1144,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.5.3"
+                "source": "https://github.com/guzzle/promises/tree/2.6.0"
             },
             "funding": [
                 {
@@ -1923,20 +1160,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-24T09:11:28+00:00"
+            "time": "2026-10-18T12:46:59+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.13.1",
+            "version": "2.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "95e7828100de18b4e269fb1703be530082d5166d"
+                "reference": "adee536f95101929f262b8c59e8a61472f347d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/95e7828100de18b4e269fb1703be530082d5166d",
-                "reference": "95e7828100de18b4e269fb1703be530082d5166d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/adee536f95101929f262b8c59e8a61472f347d58",
+                "reference": "adee536f95101929f262b8c59e8a61472f347d58",
                 "shasum": ""
             },
             "require": {
@@ -2026,7 +1263,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.13.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.13.2"
             },
             "funding": [
                 {
@@ -2042,7 +1279,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-24T09:13:11+00:00"
+            "time": "2026-10-17T23:49:46+00:00"
         },
         {
             "name": "infisical/php-sdk",
@@ -2280,16 +1517,16 @@
         },
         {
             "name": "jaxon-php/jaxon-core",
-            "version": "v5.8.4",
+            "version": "v5.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaxon-php/jaxon-core.git",
-                "reference": "36a2fdc5cb1f62958151f98ab8764281d62a3f84"
+                "reference": "925708d48f12bfe429d233880ea291dce4487656"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaxon-php/jaxon-core/zipball/36a2fdc5cb1f62958151f98ab8764281d62a3f84",
-                "reference": "36a2fdc5cb1f62958151f98ab8764281d62a3f84",
+                "url": "https://api.github.com/repos/jaxon-php/jaxon-core/zipball/925708d48f12bfe429d233880ea291dce4487656",
+                "reference": "925708d48f12bfe429d233880ea291dce4487656",
                 "shasum": ""
             },
             "require": {
@@ -2360,20 +1597,20 @@
                 "issues": "https://github.com/jaxon-php/jaxon-core/issues",
                 "source": "https://github.com/jaxon-php/jaxon-core"
             },
-            "time": "2026-10-06T10:18:53+00:00"
+            "time": "2026-11-01T22:31:30+00:00"
         },
         {
             "name": "jaxon-php/jaxon-dialogs",
-            "version": "v5.1.3",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jaxon-php/jaxon-dialogs.git",
-                "reference": "96241cdea6a9713983b50339ee3b8877e25811ac"
+                "reference": "59a84eb0f03a2542071ff3af8eabb77055a3f976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jaxon-php/jaxon-dialogs/zipball/96241cdea6a9713983b50339ee3b8877e25811ac",
-                "reference": "96241cdea6a9713983b50339ee3b8877e25811ac",
+                "url": "https://api.github.com/repos/jaxon-php/jaxon-dialogs/zipball/59a84eb0f03a2542071ff3af8eabb77055a3f976",
+                "reference": "59a84eb0f03a2542071ff3af8eabb77055a3f976",
                 "shasum": ""
             },
             "require": {
@@ -2420,7 +1657,7 @@
                 "issues": "https://github.com/jaxon-php/jaxon-dialogs/issues",
                 "source": "https://github.com/jaxon-php/jaxon-dialogs"
             },
-            "time": "2026-01-09T01:09:08+00:00"
+            "time": "2026-10-26T02:21:38+00:00"
         },
         {
             "name": "jaxon-php/jaxon-slim",
@@ -2989,16 +2226,16 @@
         },
         {
             "name": "lagdo/html-builder",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/html-builder.git",
-                "reference": "d9050a357f3f3ba38c3d966cf2beb9e6622b8bce"
+                "reference": "d25f843a71ed4a418ce04d5b450110b81b1abb9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/html-builder/zipball/d9050a357f3f3ba38c3d966cf2beb9e6622b8bce",
-                "reference": "d9050a357f3f3ba38c3d966cf2beb9e6622b8bce",
+                "url": "https://api.github.com/repos/lagdo/html-builder/zipball/d25f843a71ed4a418ce04d5b450110b81b1abb9d",
+                "reference": "d25f843a71ed4a418ce04d5b450110b81b1abb9d",
                 "shasum": ""
             },
             "require": {
@@ -3036,20 +2273,20 @@
                 "issues": "https://github.com/lagdo/html-builder/issues",
                 "source": "https://github.com/lagdo/html-builder"
             },
-            "time": "2026-10-05T07:25:43+00:00"
+            "time": "2026-10-25T14:51:03+00:00"
         },
         {
             "name": "lagdo/jaxon-dbadmin",
-            "version": "v0.36.0",
+            "version": "v0.37.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/jaxon-dbadmin.git",
-                "reference": "d900b3fb11b25c6ea7457f0335864bee5f037a47"
+                "reference": "a4909d853389f52716f696308958d4c34c46b9fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/jaxon-dbadmin/zipball/d900b3fb11b25c6ea7457f0335864bee5f037a47",
-                "reference": "d900b3fb11b25c6ea7457f0335864bee5f037a47",
+                "url": "https://api.github.com/repos/lagdo/jaxon-dbadmin/zipball/a4909d853389f52716f696308958d4c34c46b9fc",
+                "reference": "a4909d853389f52716f696308958d4c34c46b9fc",
                 "shasum": ""
             },
             "require": {
@@ -3057,13 +2294,13 @@
                 "ext-json": "*",
                 "jaxon-php/jaxon-attributes": "^1.3",
                 "jaxon-php/jaxon-core": "^5.8",
-                "jaxon-php/jaxon-dialogs": "^5.1",
+                "jaxon-php/jaxon-dialogs": "^5.2",
                 "jaxon-php/jaxon-storage": "^1.2",
                 "jaxon-php/jaxon-upload": "^2.1",
                 "lagdo/dbadmin-driver": "0.23.*",
                 "lagdo/facades": "^1.2",
-                "lagdo/jaxon-ui-builder": "0.15.*",
-                "lagdo/ui-builder": "0.15.*",
+                "lagdo/jaxon-ui-builder": "0.16.*",
+                "lagdo/ui-builder": "0.16.*",
                 "php": ">=8.1.0"
             },
             "require-dev": {
@@ -3111,32 +2348,29 @@
                 "issues": "https://github.com/lagdo/jaxon-dbadmin/issues",
                 "source": "https://github.com/lagdo/jaxon-dbadmin"
             },
-            "time": "2026-10-05T16:50:44+00:00"
+            "time": "2026-11-01T05:57:01+00:00"
         },
         {
             "name": "lagdo/jaxon-ui-builder",
-            "version": "v0.15.0",
+            "version": "v0.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/jaxon-ui-builder.git",
-                "reference": "e33ab997b6ab5e3d226fc9eda1ba1a84d597bce6"
+                "reference": "68d68f8c1599e884b224219f0195a548072ffb1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/jaxon-ui-builder/zipball/e33ab997b6ab5e3d226fc9eda1ba1a84d597bce6",
-                "reference": "e33ab997b6ab5e3d226fc9eda1ba1a84d597bce6",
+                "url": "https://api.github.com/repos/lagdo/jaxon-ui-builder/zipball/68d68f8c1599e884b224219f0195a548072ffb1d",
+                "reference": "68d68f8c1599e884b224219f0195a548072ffb1d",
                 "shasum": ""
             },
             "require": {
-                "jaxon-php/jaxon-core": "^5.4",
-                "lagdo/ui-builder": "0.15.*",
+                "jaxon-php/jaxon-core": "^5.8",
+                "lagdo/ui-builder": "0.16.*",
                 "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "src/register.php"
-                ],
                 "psr-4": {
                     "Lagdo\\UiBuilder\\Jaxon\\": "src/"
                 }
@@ -3163,24 +2397,24 @@
                 "issues": "https://github.com/lagdo/jaxon-ui-builder/issues",
                 "source": "https://github.com/lagdo/jaxon-ui-builder"
             },
-            "time": "2026-10-05T08:53:35+00:00"
+            "time": "2026-10-31T00:42:10+00:00"
         },
         {
             "name": "lagdo/ui-builder",
-            "version": "v0.15.0",
+            "version": "v0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/ui-builder.git",
-                "reference": "1e89cbd4148434bca16455f2efd90cc8b91ba20c"
+                "reference": "080cb25b7fd014565d852b8ed9e355ffd509ec79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/ui-builder/zipball/1e89cbd4148434bca16455f2efd90cc8b91ba20c",
-                "reference": "1e89cbd4148434bca16455f2efd90cc8b91ba20c",
+                "url": "https://api.github.com/repos/lagdo/ui-builder/zipball/080cb25b7fd014565d852b8ed9e355ffd509ec79",
+                "reference": "080cb25b7fd014565d852b8ed9e355ffd509ec79",
                 "shasum": ""
             },
             "require": {
-                "lagdo/html-builder": "1.6.*",
+                "lagdo/html-builder": "1.7.*",
                 "php": ">=8.1"
             },
             "require-dev": {
@@ -3215,24 +2449,24 @@
                 "issues": "https://github.com/lagdo/ui-builder/issues",
                 "source": "https://github.com/lagdo/ui-builder"
             },
-            "time": "2026-10-05T08:53:35+00:00"
+            "time": "2026-10-26T05:07:47+00:00"
         },
         {
             "name": "lagdo/ui-builder-bootstrap5",
-            "version": "v0.14.0",
+            "version": "v0.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lagdo/ui-builder-bootstrap5.git",
-                "reference": "08152463e17733cccb8d2b0564074dc1e7bf7d8f"
+                "reference": "06907241628cadae2dfaf7947eb5a65f6280480c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lagdo/ui-builder-bootstrap5/zipball/08152463e17733cccb8d2b0564074dc1e7bf7d8f",
-                "reference": "08152463e17733cccb8d2b0564074dc1e7bf7d8f",
+                "url": "https://api.github.com/repos/lagdo/ui-builder-bootstrap5/zipball/06907241628cadae2dfaf7947eb5a65f6280480c",
+                "reference": "06907241628cadae2dfaf7947eb5a65f6280480c",
                 "shasum": ""
             },
             "require": {
-                "lagdo/ui-builder": "0.15.*",
+                "lagdo/ui-builder": "0.16.*",
                 "php": ">=8.1"
             },
             "require-dev": {
@@ -3267,20 +2501,72 @@
                 "issues": "https://github.com/lagdo/ui-builder-bootstrap5/issues",
                 "source": "https://github.com/lagdo/ui-builder-bootstrap5"
             },
-            "time": "2026-10-05T08:53:35+00:00"
+            "time": "2026-10-26T05:07:47+00:00"
         },
         {
-            "name": "laminas/laminas-diactoros",
-            "version": "3.8.0",
+            "name": "lagdo/ui-builder-bulma",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "60c182916b2749480895601649563970f3f12ec4"
+                "url": "https://github.com/lagdo/ui-builder-bulma.git",
+                "reference": "857c1c8a9ca723800e9bcc51de39a00aa6d43d43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/60c182916b2749480895601649563970f3f12ec4",
-                "reference": "60c182916b2749480895601649563970f3f12ec4",
+                "url": "https://api.github.com/repos/lagdo/ui-builder-bulma/zipball/857c1c8a9ca723800e9bcc51de39a00aa6d43d43",
+                "reference": "857c1c8a9ca723800e9bcc51de39a00aa6d43d43",
+                "shasum": ""
+            },
+            "require": {
+                "lagdo/ui-builder": "0.16.*",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpcov": "^8.2",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lagdo\\UiBuilder\\Bulma\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry Feuzeu",
+                    "email": "thierry.feuzeu@gmail.com"
+                }
+            ],
+            "description": "UI Builder extensions for the Bulma framework.",
+            "homepage": "https://github.com/lagdo/ui-builder-bulma",
+            "keywords": [
+                "UI Builder",
+                "bulma",
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/lagdo/ui-builder-bulma/issues",
+                "source": "https://github.com/lagdo/ui-builder-bulma"
+            },
+            "time": "2026-10-29T19:42:01+00:00"
+        },
+        {
+            "name": "laminas/laminas-diactoros",
+            "version": "3.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-diactoros.git",
+                "reference": "4ab9fe10869ac0cd46fa78e641b6d0f4389bc6b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/4ab9fe10869ac0cd46fa78e641b6d0f4389bc6b4",
+                "reference": "4ab9fe10869ac0cd46fa78e641b6d0f4389bc6b4",
                 "shasum": ""
             },
             "require": {
@@ -3296,6 +2582,7 @@
                 "psr/http-message-implementation": "^1.1 || ^2.0"
             },
             "require-dev": {
+                "boundwize/structarmed": "^0.17.7",
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-gd": "*",
@@ -3351,11 +2638,11 @@
             },
             "funding": [
                 {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
+                    "url": "https://crowdfunding.linuxfoundation.org/initiatives/laminas-project",
+                    "type": "custom"
                 }
             ],
-            "time": "2025-10-12T15:31:36+00:00"
+            "time": "2026-10-08T08:19:47+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -3671,60 +2958,6 @@
                 }
             ],
             "time": "2026-07-09T11:49:27+00:00"
-        },
-        {
-            "name": "lizhichao/one-sm",
-            "version": "1.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lizhichao/sm.git",
-                "reference": "687a012a44a5bfd4d9143a0234e1060543be455a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lizhichao/sm/zipball/687a012a44a5bfd4d9143a0234e1060543be455a",
-                "reference": "687a012a44a5bfd4d9143a0234e1060543be455a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "OneSm\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "tanszhe",
-                    "email": "1018595261@qq.com"
-                }
-            ],
-            "description": "国密sm3",
-            "keywords": [
-                "php",
-                "sm3"
-            ],
-            "support": {
-                "issues": "https://github.com/lizhichao/sm/issues",
-                "source": "https://github.com/lizhichao/sm/tree/1.10"
-            },
-            "funding": [
-                {
-                    "url": "https://www.vicsdf.com/img/w.jpg",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.vicsdf.com/img/z.jpg",
-                    "type": "custom"
-                }
-            ],
-            "time": "2021-05-26T06:19:22+00:00"
         },
         {
             "name": "matthiasmullie/minify",
@@ -5565,16 +4798,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v8.1.6",
+            "version": "v8.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "7599ebb855fede59413ddb7f15198d67bfcae7ba"
+                "reference": "43d109c803d22c00bb820ed45df250b6a8792ca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/7599ebb855fede59413ddb7f15198d67bfcae7ba",
-                "reference": "7599ebb855fede59413ddb7f15198d67bfcae7ba",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/43d109c803d22c00bb820ed45df250b6a8792ca2",
+                "reference": "43d109c803d22c00bb820ed45df250b6a8792ca2",
                 "shasum": ""
             },
             "require": {
@@ -5612,7 +4845,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v8.1.6"
+                "source": "https://github.com/symfony/filesystem/tree/v8.1.9"
             },
             "funding": [
                 {
@@ -5632,7 +4865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-23T10:06:25+00:00"
+            "time": "2026-10-06T20:05:50+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5719,16 +4952,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.43.0",
+            "version": "v1.43.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "4d5d331bf731e0aedbc6b2f5e61135b7b7996a72"
+                "reference": "122889ed24dc000165bcbfd77ec412f15cbdfc6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/4d5d331bf731e0aedbc6b2f5e61135b7b7996a72",
-                "reference": "4d5d331bf731e0aedbc6b2f5e61135b7b7996a72",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/122889ed24dc000165bcbfd77ec412f15cbdfc6a",
+                "reference": "122889ed24dc000165bcbfd77ec412f15cbdfc6a",
                 "shasum": ""
             },
             "require": {
@@ -5780,7 +5013,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.43.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.43.3"
             },
             "funding": [
                 {
@@ -5800,7 +5033,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-24T15:19:04+00:00"
+            "time": "2026-10-28T09:35:49+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -5948,16 +5181,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.7.0",
+            "version": "v5.8.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "301c07936b16d88628b126b01d082ba153cf4c40"
+                "url": "https://github.com/phpdotenv/phpdotenv.git",
+                "reference": "96149103e62ac67e915f6d2ef59b72dee2e011e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/301c07936b16d88628b126b01d082ba153cf4c40",
-                "reference": "301c07936b16d88628b126b01d082ba153cf4c40",
+                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/96149103e62ac67e915f6d2ef59b72dee2e011e0",
+                "reference": "96149103e62ac67e915f6d2ef59b72dee2e011e0",
                 "shasum": ""
             },
             "require": {
@@ -5984,7 +5217,7 @@
                     "forward-command": false
                 },
                 "branch-alias": {
-                    "dev-master": "5.6-dev"
+                    "dev-master": "5.8-dev"
                 }
             },
             "autoload": {
@@ -6015,8 +5248,8 @@
                 "environment"
             ],
             "support": {
-                "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.7.0"
+                "issues": "https://github.com/phpdotenv/phpdotenv/issues",
+                "source": "https://github.com/phpdotenv/phpdotenv/tree/v5.8.0"
             },
             "funding": [
                 {
@@ -6028,7 +5261,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-24T18:07:49+00:00"
+            "time": "2026-10-25T16:26:19+00:00"
         },
         {
             "name": "voku/portable-ascii",

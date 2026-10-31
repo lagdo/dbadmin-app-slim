@@ -1,114 +1,58 @@
 <?php
 
-use App\Facade\RouteParser;
-use App\Facade\Session;
-use Lagdo\DbAdmin\Support\Facade\Auth;
-use Lagdo\DbAdmin\Support\Provider;
-use Lagdo\DbAdmin\Support\Service;
-use Lagdo\UiBuilder\Bootstrap5;
-use Pharaonic\Slugify\Facades\Slugify;
-
 return [
+    /*
+     * An auth service defined in services/auth.php.
+     */
+    // 'auth' => null, // No auth.
+    'auth' => 'default',
+
+    /*
+     * An export service defined in services/export.php.
+     */
+    // 'export' => null, // No export.
+    'export' => 'default',
+
+    /*
+     * A secret service defined in services/secret.php.
+     * infisical, aws-secret, gcp-secret, openbao, or azure-vault.
+     */
+    // Comment to use the default secret config provider, which reads secret from the .env.dbadmin file.
+    // 'secret' => 'infisical',
+
     'ui' => [
-        'template' => [
-            // SB Admin template: https://startbootstrap.com/template/sb-admin
-            // 'name' => 'sb-admin',
-            // 'builder' => Bootstrap5\Builder::class,
-            // CoreUI 5 template: https://coreui.io/product/free-bootstrap-admin-template/
-            'name' => 'coreui5',
-            'builder' => Bootstrap5\CoreUi\Builder::class,
-            // Plain Admin template: https://plainadmin.com/
-            // 'name' => 'plain-admin',
-            // 'builder' => Bootstrap5\Builder::class,
-        ],
+        /*
+         * A template service defined in services/template.php.
+         * - sb-admin: SB Admin template: https://startbootstrap.com/template/sb-admin
+         * - plain-admin: Plain Admin template: https://plainadmin.com
+         * - coreui5: CoreUI 5 template: https://coreui.io/product/free-bootstrap-admin-template
+         * - bulma: Bulma Admin One template: https://github.com/vikdiesel/admin-one-bulma-dashboard
+         */
+        'template' => 'bulma',
         'assets' => [
             'url' => '/dbadmin',
-        ],
-        'toast' => [
-            'lib' => 'butterup',
         ],
         'query' => [
             // 'cm' for CodeMirror or 'ace' for Ace Editor.
             'editor' => 'cm',
         ],
     ],
-    'admin' => [
-        'queries' => [
-            'save' => [
-                'editor' => false,
-                'builder' => false,
-                'library' => false,
-            ],
-            'show' => [
-                'preferences' => false,
-                'history' => false,
-                'favorite' => false,
-            ],
-            'history' => [
-                'distinct' => false,
-                'limit' => 10,
-            ],
-            'favorite' => [
-                'limit' => 10,
-            ],
-        ],
-    ],
+
+    /*
+     * The audit logging options.
+     */
     'audit' => [
         'enabled' => false,
         'users' => [
             // The emails of users that are allowed to access the audit page.
         ],
+        'database' => [
+            // Same as the "servers" items, but "name" is the database name.
+        ],
         'queries' => [
-            'database' => [
-                // Same as the "servers" items, but "name" is the database name.
-            ],
             'pagination' => [
                 'limit' => 10,
             ],
         ],
-    ],
-    // 'auth' => null, // No auth.
-    'auth' => fn() => new class implements Provider\AuthInterface {
-        public function userId(): string
-        {
-            return Session::get('user')?->email ?? '';
-        }
-        public function name(): string
-        {
-            return Session::get('user')?->name ?? '';
-        }
-        public function roles(): array
-        {
-            return [];
-        }
-        public function audit(): string
-        {
-            return RouteParser::urlFor('dbaudit_page');
-        }
-        public function logout(): string
-        {
-            return RouteParser::urlFor('auth_logout');
-        }
-    },
-    // 'export' => null, // No export.
-    'export' => fn() => new class extends Service\Export\AbstractFileSystem {
-        protected function storage(): string
-        {
-            return 'exports';
-        }
-        protected function path(string $filename): string
-        {
-            // Use the slugified username to customize the path.
-            $userId = Auth::userId();
-            $userDir = $userId === '' ? 'users' : 'users/' . Slugify::get($userId);
-            return "$userDir/$filename";
-        }
-        protected function url(string $filename): string
-        {
-            return RouteParser::urlFor('export', ['filename' => $filename]);
-        }
-    },
-    // Comment all to use the default secret config provider, which reads secret from the .env.dbadmin file.
-    'secret' => [
     ],
 ];

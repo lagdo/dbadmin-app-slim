@@ -5,6 +5,7 @@ use Jaxon\Config\Config;
 use Jaxon\Config\ConfigSetter;
 use Lagdo\DbAdmin\Driver\Utils\TranslatorInterface;
 use Lagdo\DbAdmin\Support\Provider\AuthInterface;
+use Lagdo\DbAdmin\Support\Service\Export\DatabaseReader;
 use Lagdo\DbAdmin\Support\Service\Export\FileSystemInterface;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
@@ -45,6 +46,7 @@ $builder->addDefinitions([
     AuthInterface::class => fn() => jaxon()->di()->g(AuthInterface::class),
     TranslatorInterface::class => fn() => jaxon()->di()->g(TranslatorInterface::class),
     FileSystemInterface::class => fn() => jaxon()->di()->g(FileSystemInterface::class),
+    DatabaseReader::class => fn() => jaxon()->di()->g(DatabaseReader::class),
 ]);
 
 $builder->useAutowiring(false);

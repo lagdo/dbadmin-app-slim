@@ -20,18 +20,17 @@ return [
         'assets' => [
             'export' => true,
             'minify' => true,
-            'uri' => '/jaxon/app-0.12.0',
-            'dir' => "$baseDir/public/jaxon/app-0.12.0",
+            'uri' => '/jaxon/app-0.14.0',
+            'dir' => "$baseDir/public/jaxon/app-0.14.0",
             // 'file' => '',
+            'include' => [
+                'dialog_code' => false,
+            ],
         ],
         'dialogs' => [
-            'default' => [
-                'modal' => 'bootbox',
-                'alert' => 'sweetalert',
-                'confirm' => 'sweetalert',
-            ],
+            // Defined in the services/template.php file.
             'lib' => [
-                'use' => ['butterup'],
+                'use' => ['bootstrap5', 'bulma', 'sweetalert', 'cute', 'notyf'],
             ],
         ],
         'storage' => [
