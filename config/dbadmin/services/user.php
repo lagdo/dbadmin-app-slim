@@ -5,8 +5,8 @@ use App\Facade\Session;
 use Lagdo\DbAdmin\Support\Provider\AuthInterface;
 
 return [
-    // 'default' => null, // No auth.
-    'default' => fn() => new class implements AuthInterface {
+    // 'auth' => null, // No auth.
+    'auth' => fn() => new class implements AuthInterface {
         public function userId(): string
         {
             return Session::get('user')?->email ?? '';

@@ -20,38 +20,24 @@ return [
         'assets' => [
             'export' => true,
             'minify' => true,
-            'uri' => '/jaxon/app-0.14.0',
-            'dir' => "$baseDir/public/jaxon/app-0.14.0",
+            'uri' => '/jaxon/app-0.15.0',
+            'dir' => "$baseDir/public/jaxon/app-0.15.0",
             // 'file' => '',
             'include' => [
                 'dialog_code' => false,
             ],
         ],
         'dialogs' => [
-            // Defined in the services/template.php file.
+            // The dialogs libraries are defined in the dbadmin/services/template.php file.
             'lib' => [
                 'use' => ['bootstrap5', 'bulma', 'sweetalert', 'cute', 'notyf'],
             ],
         ],
         'storage' => [
-            'stores' => [
-                'uploads' => [
-                    'adapter' => 'local',
-                    'dir' => "$baseDir/storage/uploads",
-                ],
-                'exports' => [
-                    'adapter' => 'local',
-                    'dir' => "$baseDir/storage/exports",
-                ],
-            ],
+            'stores' => [],
         ],
         'upload' => [
-            'enabled' => true,
-            'files' => [
-                'sql_files' => [
-                    'storage' => 'uploads',
-                ],
-            ],
+            'enabled' => false,
         ],
     ],
     'lib' => [

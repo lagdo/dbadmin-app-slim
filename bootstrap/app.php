@@ -1,11 +1,15 @@
 <?php
 
+use App\Facade\Session;
 use App\Response\ResponseStream;
 use DI\Container;
 use Dotenv\Dotenv;
 use Jaxon\Config\Config;
 use Jaxon\Exception\RequestException;
 use Lagdo\DbAdmin\Support\Facade\Export;
+use Lagdo\DbAdmin\Support\Facade\Import;
+use Lagdo\DbAdmin\Support\Service\Export\ExportService;
+use Lagdo\DbAdmin\Support\Service\Import\ImportService;
 use Lagdo\Facades\ContainerWrapper;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -100,15 +104,21 @@ $app->group('/audit', fn(Group $group) => $router($group, 'dbaudit'))
     ->add($authCheckMiddleware)
     ->add($authStartMiddleware);
 
-$app->get('/export/{filename}', function(Request $request, Response $response, array $args) {
+$app->get('/export/{filename}', function(Request $_, Response $response, array $args) {
     $filename = $args['filename'];
-    $options = Export::options($filename);
-    $exports = Export::export($options);
+
+    /** @var ExportService */
+    $service = Export::instance();
+    $options = $service->options($filename, ['timeLimit' => 0]);
+    $exports = $options === null ? null : $service->export($options);
     if ($exports === null) {
         $response->getBody()->write("Unable to export file $filename.");
         return $response->withStatus(403)
             ->withHeader('Content-Type', 'text/plain');
     }
+
+    // Unlock the session before starting the streaming, so the next requests can be processed.
+    session_write_close();
 
     $stream = new ResponseStream($exports);
     return $response->withBody($stream)
@@ -117,7 +127,35 @@ $app->get('/export/{filename}', function(Request $request, Response $response, a
         ->withHeader('Cache-Control', 'no-cache')
         ->withHeader('Connection', 'keep-alive')
         ->withHeader('X-Accel-Buffering', 'no');
-})->setName('dbadmin_file')
+})->setName('dbadmin_export')
+    ->add($adminConfigMiddleware)
+    ->add($authCheckMiddleware)
+    ->add($authStartMiddleware);
+
+$app->get('/import/{filename}', function(Request $_, Response $response, array $args) {
+    $filename = $args['filename'];
+
+    /** @var ImportService */
+    $service = Import::instance();
+    $options = $service->options($filename, ['timeLimit' => 0]);
+    $imports = $options === null ? null : $service->import($options);
+    if ($imports === null) {
+        $response->getBody()->write("Unable to import file $filename.");
+        return $response->withStatus(403)
+            ->withHeader('Content-Type', 'text/plain');
+    }
+
+    // Unlock the session before starting the streaming, so the next requests can be processed.
+    session_write_close();
+
+    $stream = new ResponseStream($imports);
+    return $response->withBody($stream)
+        ->withHeader('Content-Type', $options->contentType())
+        ->withHeader('Content-Disposition', $options->contentDisposition())
+        ->withHeader('Cache-Control', 'no-cache')
+        ->withHeader('Connection', 'keep-alive')
+        ->withHeader('X-Accel-Buffering', 'no');
+})->setName('dbadmin_import')
     ->add($adminConfigMiddleware)
     ->add($authCheckMiddleware)
     ->add($authStartMiddleware);
