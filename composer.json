@@ -55,6 +55,11 @@
             "app/helpers.php"
         ]
     },
+    "scripts": {
+        "dbadmin-create-users-file": [
+            "@php -f cli/create-users-file.php"
+        ]
+    },
     "minimum-stability": "stable",
     "prefer-stable": true
 }
