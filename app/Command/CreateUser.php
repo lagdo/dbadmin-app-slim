@@ -6,8 +6,15 @@ use Commando\Command;
 use League\CLImate\CLImate;
 
 use function addslashes;
+use function compact;
+use function dirname;
+use function env;
+use function file_put_contents;
 use function filter_var;
+use function json_decode;
+use function json_encode;
 use function password_hash;
+use function preg_match;
 use function trim;
 
 class CreateUser
@@ -99,12 +106,15 @@ class CreateUser
         $password = password_hash($password, PASSWORD_DEFAULT);
 
         $fullPath = dirname(__DIR__, 2) . "/$usersFile";
-        $users = json_decode(file_get_contents($fullPath), true) ?? [];
-        $users = array_filter($users, fn(array $user) =>
+        $users = json_decode(file_get_contents($fullPath), true) ?? ['users' => []];
+
+        // Remove the new user, if it already exists.
+        $users = array_filter($users['users'] ?? [], fn(array $user) =>
             ($user['email'] ?? '') !== $email);
         $users[] = compact('name', 'email', 'password');
+
         // Save the users.
-        if (!file_put_contents($fullPath, json_encode($users, JSON_PRETTY_PRINT))) {
+        if (!file_put_contents($fullPath, json_encode(compact('users'), JSON_PRETTY_PRINT))) {
             $this->io->red("Unable to save the users in the $usersFile file.");
             return;
         }
